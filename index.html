@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="bodyArea">
+      <div class="heading"><b>Tic Tae Toe</b></div>
+      <div>
+        <div id="chioceOption" class="chooseplayer">
+          <div class="form-group">
+            <label for="playerOne">Choose : </label>
+            <select class="form-control" id="playerOne">
+              <option value="X">X</option>
+              <option value="O">O</option>
+            </select>
+          </div>
+          <div class="btn">
+            <button class="submit" onclick="selectPlayer()">
+              <b>Submit</b>
+            </button>
+          </div>
+        </div>
+        <div id="turnDisplay" class="turn">
+          <div class="option">Turn</div>
+          <div id="turnVal" class="option"><h3></h3></div>
+        </div>
+        <div id="board">
+          <div class="rowOne">
+            <button
+              class="inputBox"
+              id="boxOne"
+              onclick="boxOneCall()"
+            ></button>
+            <button
+              class="inputBox"
+              id="boxTwo"
+              onclick="boxTwoCall()"
+            ></button>
+            <button
+              class="inputBox"
+              id="boxThree"
+              onclick="boxThreeCall()"
+            ></button>
+          </div>
+          <div class="rowTwo">
+            <button
+              class="inputBox"
+              id="boxFour"
+              onclick="boxFourCall()"
+            ></button>
+            <button
+              class="inputBox"
+              id="boxFive"
+              onclick="boxFiveCall()"
+            ></button>
+            <button
+              class="inputBox"
+              id="boxSix"
+              onclick="boxSixCall()"
+            ></button>
+          </div>
+          <div class="rowThree">
+            <button
+              class="inputBox"
+              id="boxSeven"
+              onclick="boxSevenCall()"
+            ></button>
+            <button
+              class="inputBox"
+              id="boxEight"
+              onclick="boxEightCall()"
+            ></button>
+            <button
+              class="inputBox"
+              id="boxNine"
+              onclick="boxNineCall()"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
